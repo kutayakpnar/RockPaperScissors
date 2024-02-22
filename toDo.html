@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO</title>
+    <link rel="stylesheet" href="styles/todo.css">
 </head>
+
 <body>
     <p>Todo List</p>
-    <input placeholder="Todo Name" class="js-name-input">
-    <button onclick="
+    <div class="todo-input-grid">
+        <input placeholder="Todo Name" class="js-name-input name-input">
+        <input type="date" class="js-due-date due-date-input">
+        <button onclick="
         addTodo();
         
 
-    ">Add</button>
+    " class="add-todo-button">Add</button>
+    </div>
 
-
-    <div class="todos"></div>
+    <div class="todos todo-grid"></div>
 
 
 
@@ -25,4 +30,5 @@
 
     <script src="scripts/todo-list.js"></script>
 </body>
+
 </html>
