@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    background-image: url(/images/digitalClockBackground.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+
+
+
+}
+
+.clock-container{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 100px;
+
+}
+
+.clock{
+    
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(50, 49, 49);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    background-color: rgba(59, 59, 1, 0.293);
+    /*color: white;*/
+}
+
+@media screen and (max-width: 650px) {
+   
+    .clock-container{
+        
+        font-size: 20px;
+
+    }
+    .clock{
+        font-size: 4.5rem;
+        
+        
+    }
+  }
